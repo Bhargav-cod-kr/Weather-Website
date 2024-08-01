@@ -29,22 +29,22 @@ async function fetchWeather(city) {
         console.log(result);
     
         if (result.weather[0].main == "Clouds") {
-          weatherIcon.src = "images/clouds.png";
+          weatherIcon.src = "clouds.png";
         }
         else if (result.weather[0].main == "Rain") {
-          weatherIcon.src = "images/rain.png";
+          weatherIcon.src = "irain.png";
         }
         else if (result.weather[0].main == "Clear") {
-            weatherIcon.src = "images/clear.png";
+            weatherIcon.src = "clear.png";
           }
         else if (result.weather[0].main == "Drizzle") {
-            weatherIcon.src = "images/drizzle.png";
+            weatherIcon.src = "drizzle.png";
           }
         else if (result.weather[0].main == "Mist") {
-            weatherIcon.src = "images/mist.png";
+            weatherIcon.src = "mist.png";
           }
         else if (result.weather[0].main == "Snow") {
-            weatherIcon.src = "images/snow.png";
+            weatherIcon.src = "snow.png";
           }
         document.querySelector('.error').style.display = 'none';      
     }
