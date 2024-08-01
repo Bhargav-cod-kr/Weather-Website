@@ -1,4 +1,4 @@
-
+const apiKey = "73b5be82180c5f75d7bf5c1e689df6c4";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
@@ -29,22 +29,22 @@ async function fetchWeather(city) {
         console.log(result);
     
         if (result.weather[0].main == "Clouds") {
-          weatherIcon.src = "clouds.png";
+          weatherIcon.src = "images/clouds.png";
         }
         else if (result.weather[0].main == "Rain") {
-          weatherIcon.src = "rain.png";
+          weatherIcon.src = "images/rain.png";
         }
         else if (result.weather[0].main == "Clear") {
-            weatherIcon.src = "clear.png";
+            weatherIcon.src = "images/clear.png";
           }
         else if (result.weather[0].main == "Drizzle") {
-            weatherIcon.src = "drizzle.png";
+            weatherIcon.src = "images/drizzle.png";
           }
         else if (result.weather[0].main == "Mist") {
-            weatherIcon.src = "mist.png";
+            weatherIcon.src = "images/mist.png";
           }
         else if (result.weather[0].main == "Snow") {
-            weatherIcon.src = "snow.png";
+            weatherIcon.src = "images/snow.png";
           }
         document.querySelector('.error').style.display = 'none';      
     }
