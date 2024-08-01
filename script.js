@@ -32,7 +32,7 @@ async function fetchWeather(city) {
           weatherIcon.src = "clouds.png";
         }
         else if (result.weather[0].main == "Rain") {
-          weatherIcon.src = "irain.png";
+          weatherIcon.src = "rain.png";
         }
         else if (result.weather[0].main == "Clear") {
             weatherIcon.src = "clear.png";
