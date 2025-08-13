@@ -1,4 +1,4 @@
-const apiKey = "73b5be82180c5f75d7bf5c1e689df6c4";
+const apiKey = "";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
@@ -72,3 +72,4 @@ searchBox.addEventListener('keydown' , (e) => {
 
 
 fetchWeather("Banswara");
+
